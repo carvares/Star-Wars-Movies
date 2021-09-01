@@ -46,22 +46,22 @@ export default function MoviePage() {
       </Link>
       <ul>
         <h1>
-          Título: <p>{movieInfo.title}</p>
+          Title: <p>{movieInfo.title}</p>
         </h1>
         <li>
-          Episódio: <p>{movieInfo.episode_id}</p>
+          Episode: <p>{movieInfo.episode_id}</p>
         </li>
         <li>
-          Diretor: <p>{movieInfo.director}</p>
+          Director: <p>{movieInfo.director}</p>
         </li>
         <li>
-          Produtores: <p>{movieInfo.producer}</p>
+          Producer: <p>{movieInfo.producer}</p>
         </li>
         <li>
-          Lançamento: <p>{movieInfo.release_date}</p>
+          Release Date: <p>{movieInfo.release_date}</p>
         </li>
         <li>
-          Personagens:
+          Characters:
           <li>
             <p>{people1}</p>
           </li>

@@ -19,7 +19,7 @@ export default function Home() {
       <form>
         <input
           type="text"
-          placeholder={searchPeople ? "Procurar personagem" : "Procurar filme"}
+          placeholder={searchPeople ? "Search character" : "Search film"}
           onChange={async(event) => {
             event.target.value.length > 2
               ? setSearchList(await getResult(searchPeople,event.target.value))
@@ -32,7 +32,7 @@ export default function Home() {
           ) : (
             <MdLocalMovies onClick={() => setSearchPeople(!searchPeople)} />
           )}
-          <button>Procurar</button>
+          <button>Search</button>
         </span>
       </form>
       <ul>
