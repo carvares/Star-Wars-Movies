@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { GlobalStyles } from "./styles/GlobalStyles.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home.js";
+import MoviePage from "./components/MovieParams.js";
 
 function App() {
   return (
@@ -11,6 +12,12 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home />
+        </Route>
+        <Route path="/movie/:id">
+          <MoviePage/>
+        </Route>
+        <Route path="/people/:id">
+
         </Route>
       </Switch>
     </BrowserRouter>

@@ -11,7 +11,7 @@ export const Background = styled.div`
   img {
     width: 450px;
     height: auto;
-    margin: 200px 0 50px 0;
+    margin: 20vh 0 50px 0;
   }
   form {
     width: 570px;
