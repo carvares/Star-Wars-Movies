@@ -4,6 +4,7 @@ import { GlobalStyles } from "./styles/GlobalStyles.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home.js";
 import MoviePage from "./components/MoviePage.js";
+import PeoplePage from "./components/PeoplePage.js";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <MoviePage/>
         </Route>
         <Route path="/people/:id">
-
+        <PeoplePage/>
         </Route>
       </Switch>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MovieBackground = styled.div`
+export const PeopleBackground = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #333;
@@ -15,10 +15,10 @@ export const MovieBackground = styled.div`
       width:3vw;
       height: auto;
       color: white;
-      background-image: linear-gradient(45deg, #921010, #ff3d3d);
+      background-image: linear-gradient(45deg, #11347a, #1ab9ec);
       border-radius: 50px;
       :hover{
-          box-shadow: 0px 0px 5px 2px rgba(255, 61, 61, 0.75);
+          box-shadow: 0px 0px 5px 2px rgba(26, 185, 236, 0.75);
       }
     }
   }
@@ -48,11 +48,4 @@ export const MovieBackground = styled.div`
   p {
     color: yellow;
   }
-`;
-export const Opening = styled.span`
-  font-family: "roboto";
-  width: 20%;
-  font-size: 24px;
-  text-align: center;
-  text-shadow: 2px 2px black;
 `;
