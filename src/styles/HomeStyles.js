@@ -33,6 +33,7 @@ export const Background = styled.div`
     background-color: white;
     font-family: "Roboto";
     font-size: 15px;
+    outline: none;
   }
   span {
     display: flex;
@@ -57,5 +58,12 @@ export const Background = styled.div`
     font-family: "Roboto";
     font-size: 15px;
     font-weight: bold;
+  }
+  li{
+      font-family: "roboto";
+      width: 570px;
+      height: 30px;
+      background-color: white;
+      padding: 10px 5px;
   }
 `;
