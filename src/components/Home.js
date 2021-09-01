@@ -1,9 +1,8 @@
-import { Background } from "../styles/HomeStyles";
+import { HomeBackground } from "../styles/HomeStyles";
 import Logo from "../assets/logo.png";
 import { useState } from "react";
 import { MdLocalMovies } from "react-icons/md";
 import { BsPeopleCircle } from "react-icons/bs";
-import { DebounceInput } from "react-debounce-input";
 import getResult from "./GetResult";
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
 
   console.log(searchList);
   return (
-    <Background searchPeople={searchPeople}>
+    <HomeBackground searchPeople={searchPeople}>
       <img src={Logo} alt="SW Logo" />
       <form>
         <input
@@ -40,6 +39,6 @@ export default function Home() {
           return <li>{searchPeople?currentItem.name:currentItem.title}</li>;
         })}
       </ul>
-    </Background>
+    </HomeBackground>
   );
 }

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { GlobalStyles } from "./styles/GlobalStyles.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home.js";
-import MoviePage from "./components/MovieParams.js";
+import MoviePage from "./components/MoviePage.js";
 
 function App() {
   return (
