@@ -9,20 +9,25 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const [searchPeople, setSearchPeople] = useState(false);
   const [searchList, setSearchList] = useState([]);
+  const [saber, setSaber] = useState(false);
+  let audioOn = new Audio("/saberOn.mp3");
+  let audioOff = new Audio("/saberOff.mp3");
+  function changeSaber() {
 
-  
-
-  console.log(searchList);
+    saber ? audioOff.play() : audioOn.play();
+    setSaber(!saber);
+  }
   return (
-    <HomeBackground searchPeople={searchPeople}>
+    <HomeBackground searchPeople={searchPeople} saber={saber}>
       <img src={Logo} alt="SW Logo" />
-      <form>
+      <form onSubmit={(event) => event.preventDefault()}>
         <input
+          disabled={!saber}
           type="text"
           placeholder={searchPeople ? "Search character" : "Search film"}
-          onChange={async(event) => {
+          onChange={async (event) => {
             event.target.value.length > 2
-              ? setSearchList(await getResult(searchPeople,event.target.value))
+              ? setSearchList(await getResult(searchPeople, event.target.value))
               : setSearchList([]);
           }}
         />
@@ -32,12 +37,22 @@ export default function Home() {
           ) : (
             <MdLocalMovies onClick={() => setSearchPeople(!searchPeople)} />
           )}
-          <button>Search</button>
+          <button onClick={() => changeSaber()}>{saber ? "on" : "off"}</button>
         </span>
       </form>
       <ul>
         {searchList.map((currentItem) => {
-          return <Link to={searchPeople?`people/${currentItem.url.slice(29)}`:`movie/${currentItem.url.slice(28)}`}><li>{searchPeople?currentItem.name:currentItem.title}</li></Link>;
+          return (
+            <Link
+              to={
+                searchPeople
+                  ? `people/${currentItem.url.slice(29)}`
+                  : `movie/${currentItem.url.slice(28)}`
+              }
+            >
+              <li>{searchPeople ? currentItem.name : currentItem.title}</li>
+            </Link>
+          );
         })}
       </ul>
     </HomeBackground>

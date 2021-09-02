@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const PeopleBackground = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +19,12 @@ export const PeopleBackground = styled.div`
       :hover{
           box-shadow: 0px 0px 5px 2px rgba(26, 185, 236, 0.75);
       }
+      @media(max-width:400px){
+        display: none;
+      }
+    }
+    @media(max-width:400px){
+        left: 2vw;
     }
   }
   a {
@@ -28,10 +33,18 @@ export const PeopleBackground = styled.div`
     img {
       width: 200px;
       height: auto;
+      @media(max-width:400px){
+        position: static;
+        margin: 20px 0;
+
+    }
     }
   }
   ul {
     width: 20%;
+    @media(max-width:400px){
+      width: 70vw;
+  }
   }
   li,
   h1,
@@ -47,5 +60,22 @@ export const PeopleBackground = styled.div`
   }
   p {
     color: yellow;
+  }
+`;
+export const Loader = styled.img`
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(0.5);
+`;
+export const Error = styled.span`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50vw;
+  }
+  h1 {
+    font-size: 30px;
   }
 `;

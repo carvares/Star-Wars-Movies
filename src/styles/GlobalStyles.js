@@ -32,6 +32,15 @@ footer, header, hgroup, menu, nav, section {
 body {
 	background-color: #f6f6f6;
 	line-height: 1;
+	background-color: #333;
+}
+:root{
+	*{
+	-moz-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+     -webkit-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+	}
 }
 ol, ul {
 	list-style: none;
