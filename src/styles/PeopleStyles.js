@@ -6,45 +6,60 @@ export const PeopleBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+  }
   div {
     position: fixed;
     left: 5vw;
     top: 3vh;
+
     SVG {
-      width:3vw;
+      width: 3vw;
       height: auto;
       color: white;
       background-image: linear-gradient(45deg, #11347a, #1ab9ec);
       border-radius: 50px;
-      :hover{
-          box-shadow: 0px 0px 5px 2px rgba(26, 185, 236, 0.75);
+      :hover {
+        box-shadow: 0px 0px 5px 2px rgba(255, 61, 61, 0.75);
       }
-      @media(max-width:400px){
+      @media (max-width: 1000px) {
         display: none;
       }
     }
-    @media(max-width:400px){
-        left: 2vw;
+    @media (max-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      position: static;
+      margin: 0 0 30px 0;
+      background-image: linear-gradient(45deg, #11347a, #1ab9ec);
+      width: 80px;
+      height: 40px;
     }
   }
+  
   a {
     position: fixed;
     top: 3vh;
-    img {
+    z-index: 3;
+    & > img {
       width: 200px;
       height: auto;
-      @media(max-width:400px){
-        position: static;
-        margin: 20px 0;
-
     }
+    @media (max-width: 1000px) {
+      position: static;
+      margin: 20px 0;
     }
   }
   ul {
     width: 20%;
-    @media(max-width:400px){
+    @media (max-width: 1000px) {
       width: 70vw;
-  }
+      text-align: center;
+    }
   }
   li,
   h1,

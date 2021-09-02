@@ -18,7 +18,7 @@ export default function Home() {
     setSaber(!saber);
   }
   return (
-    <HomeBackground searchPeople={searchPeople} saber={saber}>
+    <HomeBackground searchPeople={searchPeople} saber={saber} wallpaper="../assets/wallpaper.gif">
       <img src={Logo} alt="SW Logo" />
       <form onSubmit={(event) => event.preventDefault()}>
         <input

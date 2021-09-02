@@ -45,12 +45,7 @@ export default function MoviePage() {
 
   return (
     <MovieBackground>
-      <Link to="/">
-        <div>
-          <FaEmpire />
-          <h1>voltar</h1>
-        </div>
-      </Link>
+      
       <Link to="/">
         <img src={Logo} alt="SW Logo" />
       </Link>
@@ -94,6 +89,12 @@ export default function MoviePage() {
           </Opening>
         </>
       )}
+      <Link to="/">
+        <div>
+          <FaEmpire />
+          <h1>voltar</h1>
+        </div>
+      </Link>
     </MovieBackground>
   );
 }

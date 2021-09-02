@@ -45,12 +45,7 @@ export default function PeoplePage() {
 
   return (
     <PeopleBackground>
-      <Link to="/">
-        <div>
-          <FaRebel />
-          <h1>voltar</h1>
-        </div>
-      </Link>
+      
       <Link to="/">
         <img src={Logo} alt="SW Logo" />
       </Link>
@@ -95,6 +90,12 @@ export default function PeoplePage() {
           </li>
         </ul>
       )}
+      <Link to="/">
+        <div>
+          <FaRebel />
+          <h1>voltar</h1>
+        </div>
+      </Link>
     </PeopleBackground>
   );
 }

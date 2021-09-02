@@ -6,12 +6,13 @@ export const HomeBackground = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   img {
     width: 450px;
     height: auto;
     margin: 20vh 0 50px 0;
-    @media(max-width:400px){
+    @media(max-width:1000px){
         width: 80vw;
         margin:10vh 0;
       }
@@ -22,7 +23,7 @@ export const HomeBackground = styled.div`
     border-radius: 30px;
     display: flex;
     align-items: center;
-    @media(max-width:400px){
+    @media(max-width:1000px){
         width: 95vw;
       }
   }
@@ -46,7 +47,7 @@ export const HomeBackground = styled.div`
         ? "-1px 1px 5px 9px rgba(26, 185, 236, 0.75)"
         : "-1px 1px 5px 9px rgba(255, 61, 61, 0.75)": ""};
     }
-    @media(max-width:400px){
+    @media(max-width:1000px){
       width: 70vw;
     }
   }
@@ -84,7 +85,7 @@ export const HomeBackground = styled.div`
     height: 30px;
     background-color: white;
     padding: 10px 5px;
-    @media(max-width:400px){
+    @media(max-width:1000px){
       width: 90vw;
       height: 40px;
     }

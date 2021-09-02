@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	background-color: #f6f6f6;
 	line-height: 1;
 	background-color: #333;
 }
