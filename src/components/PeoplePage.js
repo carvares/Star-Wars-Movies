@@ -38,7 +38,6 @@ export default function PeoplePage() {
         .catch(()=> setMovie3(true))
     }
   }, [peopleInfo]);
-  console.log(movie1, movie2, movie3)
   if ((!movie1 || !movie2 || !movie3) && peopleInfo !== "error") {
     return <Loader src={LoadingGif} />;
   }
