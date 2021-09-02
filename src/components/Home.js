@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const [searchPeople, setSearchPeople] = useState(false);
   const [searchList, setSearchList] = useState([]);
-  const [saber, setSaber] = useState(false);
+  const [saber, setSaber] = useState(true);
   let audioOn = new Audio("/assets/saberOn.mp3");
   let audioOff = new Audio("/assets/saberOff.mp3");
   function changeSaber() {
