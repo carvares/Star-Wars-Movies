@@ -82,12 +82,13 @@ export const HomeBackground = styled.div`
   li {
     font-family: "roboto";
     width: 570px;
-    height: 30px;
+    height: 40px;
     background-color: white;
-    padding: 10px 5px;
+    display: flex;
+    align-items: center;
     @media(max-width:1000px){
       width: 90vw;
-      height: 40px;
+      height: 50px;
     }
   }
 `;
