@@ -10,8 +10,8 @@ export default function Home() {
   const [searchPeople, setSearchPeople] = useState(false);
   const [searchList, setSearchList] = useState([]);
   const [saber, setSaber] = useState(false);
-  let audioOn = new Audio("/saberOn.mp3");
-  let audioOff = new Audio("/saberOff.mp3");
+  let audioOn = new Audio("/assets/saberOn.mp3");
+  let audioOff = new Audio("/assets/saberOff.mp3");
   function changeSaber() {
 
     saber ? audioOff.play() : audioOn.play();
