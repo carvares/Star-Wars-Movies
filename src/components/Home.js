@@ -33,9 +33,9 @@ export default function Home() {
         />
         <span>
           {searchPeople ? (
-            <BsPeopleCircle onClick={() => setSearchPeople(!searchPeople)} />
+            <BsPeopleCircle onClick={() => {setSearchPeople(!searchPeople);setSearchList([])}} />
           ) : (
-            <MdLocalMovies onClick={() => setSearchPeople(!searchPeople)} />
+            <MdLocalMovies onClick={() => {setSearchPeople(!searchPeople);setSearchList([])}} />
           )}
           <button onClick={() => changeSaber()}>{saber ? "on" : "off"}</button>
         </span>

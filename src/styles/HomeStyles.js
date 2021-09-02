@@ -23,6 +23,7 @@ export const HomeBackground = styled.div`
     border-radius: 30px;
     display: flex;
     align-items: center;
+    margin:5px 0;
     @media(max-width:1000px){
         width: 95vw;
       }
@@ -83,9 +84,15 @@ export const HomeBackground = styled.div`
     font-family: "roboto";
     width: 570px;
     height: 40px;
-    background-color: white;
+    background-color: #999;
     display: flex;
     align-items: center;
+    padding: 0 5px;
+    border-radius: 5px;
+    :hover{
+      background-color: #555;
+      font-weight: bold;
+    }
     @media(max-width:1000px){
       width: 90vw;
       height: 50px;
